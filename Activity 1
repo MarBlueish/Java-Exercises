@@ -1,0 +1,19 @@
+// Create a function that takes a number and returns the number without a sign (absolute, without using the abs function).
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class at2 {
+    public static void main(String[] args) {
+        int[] vetorRecebe = new int[5];
+        Scanner userInput = new Scanner(System.in);
+
+        for (int i = 0; i < 5; i++) { // Loop para preencher vetor tamanho 5
+            System.out.println("Insira o número " + i + " do vetor");
+            vetorRecebe[i] = userInput.nextInt();
+        }
+
+        int maximo = Arrays.stream(vetorRecebe).max().getAsInt();
+
+        System.out.println("O maior é " + maximo);
+    }
+}
