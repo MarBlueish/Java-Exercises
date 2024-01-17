@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Insira um número");
+        Scanner userInput = new Scanner(System.in);
+        int varAbsolut = userInput.nextInt();
+
+        if (varAbsolut < 0) {
+            varAbsolut = (varAbsolut*-1*2);
+            System.out.println(" O resultado é " +varAbsolut);
+        } else if (varAbsolut > 0) {
+            System.out.println("O resultado é " + varAbsolut);
+        }
+
+
+    }
+}
